@@ -41,7 +41,7 @@ export function Login() {
 
         <form
           className="bg-white
-        max-w-xl w-full rounded-lg"
+        max-w-xl w-full rounded-lg p-4"
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="mb-3">
@@ -63,8 +63,14 @@ export function Login() {
             />
           </div>
 
-          <button>Acessar</button>
+          <button
+            className="bg-zinc-900 w-full rounded-md text-white h-10 font-medium"
+            type="submit"
+          >
+            Acessar
+          </button>
         </form>
+        <Link to="/register">Não possui uma conta? Registre-se agora!</Link>
       </div>
     </Container>
   );
